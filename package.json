@@ -18,7 +18,8 @@
   },
   "files": [
     "app",
-    "command"
+    "command",
+    "middleware"
   ],
   "keywords": [
     "yeoman-generator",
