@@ -8,4 +8,4 @@ var <%= name %> = Command.extend({
   }
 });
 
-module.exports = <%= name %>
+module.exports = <%= name %>;
