@@ -6,22 +6,18 @@ var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 var os = require('os');
 
-describe('ronin', function () {
+describe('ronin:command', function () {
   before(function (done) {
     this.timeout(20000);
     
-    helpers.run(path.join(__dirname, '../app'))
+    helpers.run(path.join(__dirname, '../command'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
-      .withOptions({ 'skip-install': true })
-      .withArguments('hello-world')
+      .withArguments('hello', '--force')
       .on('end', done);
   });
 
   it('creates files', function () {
     assert.file([
-      'package.json',
-      'index.js',
-      'bin/hello-world',
       'commands/hello.js'
     ]);
   });
