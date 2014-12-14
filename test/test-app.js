@@ -20,9 +20,9 @@ describe('ronin', function () {
   it('creates files', function () {
     assert.file([
       'package.json',
-      'index.js',
+      'index.coffee',
       'bin/hello-world',
-      'commands/hello.js'
+      'commands/hello.coffee'
     ]);
   });
 });

@@ -24,7 +24,7 @@ var RoninCommandGenerator = yeoman.generators.NamedBase.extend({
     });
     
     // copy template
-    this.template('command.js', 'commands/' + name + '.js', { name: commandName });
+    this.template('command.coffee', 'commands/' + name + '.coffee', { name: commandName });
   }
 });
 

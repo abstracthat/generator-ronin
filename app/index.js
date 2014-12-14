@@ -31,9 +31,9 @@ var RoninGenerator = yeoman.generators.Base.extend({
       this.destinationRoot(this.name);
       this.dest.mkdir('bin');
       this.dest.mkdir('commands');
-      this.template('index.js', 'index.js');
+      this.template('index.coffee', 'index.coffee');
       this.template('bin/$name', 'bin/' + name);
-      this.template('commands/hello.js', 'commands/hello.js');
+      this.template('commands/hello.coffee', 'commands/hello.coffee');
       this.template('_package.json', 'package.json', { name: name });
     }
   },

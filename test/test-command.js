@@ -18,7 +18,7 @@ describe('ronin:command', function () {
 
   it('creates files', function () {
     assert.file([
-      'commands/hello.js'
+      'commands/hello.coffee'
     ]);
   });
 });
